@@ -31,6 +31,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="GENERATE"/>
+                                <connections>
+                                    <action selector="generateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAm-FL-4cD"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lLW-8O-VA0">
                                 <rect key="frame" x="66" y="116" width="283" height="302"/>
@@ -51,6 +54,10 @@
                             <constraint firstItem="lLW-8O-VA0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="snJ-x8-AfZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="qrImage" destination="lLW-8O-VA0" id="GDS-FZ-Jgr"/>
+                        <outlet property="titleText" destination="p9Z-L7-MR3" id="WtN-8Y-CrS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
